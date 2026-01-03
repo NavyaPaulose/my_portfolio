@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to bottom right,#987e72,#c39692,#854F6C,#92559f,#8d60c4,#190019);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.container{
+    width:100%;
+    height:100vh;
+    position: relative;
+}
+.logo{
+    width: 100px;
+}
+nav{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:   hsla(298, 20%, 72%, 0.25);
+    backdrop-filter:blur(10px);
+    position: fixed;
+    top: 0;
+    z-index: 1;
+
+}
+.list-item{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 30px;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.links:hover{
+    text-decoration: underline;
+    color:blue;
+}
+.home{
+    width: 100%;
+    height: 100%;
+}
+#name{
+      font-family: 'Lato', 'Montserrat', sans-serif;
+      font-size: 80px;
+      display: flex;
+      padding-top: 350px;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(90deg,#7408df,30%,#000000);
+      background-clip:text;
+      -webkit-background-clip: text;
+      color: transparent;
+      -webkit-text-fill-color: transparent;
+    
+}
+#profession{
+    font-family: 'Lato', 'Montserrat', sans-serif;
+    display: block;
+    font-size: 40px;
+    display: flex;
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.sectionHead{
+    padding-top: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:20px;
+    text-align: center;
+    color: black;
+}
+.abtimg{
+    width:100px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+   margin: 4% 10%;
+  
+ }
+ .sectionbody{
+ margin: 60px 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* repeat(no.of rows and colomns, space alloted)*/
+    align-items: center;
+    text-align: justify;
+    font-weight: 600;
+    color: aliceblue;
+ }
+ .information{
+    margin-top: 1.3rem;
+}
+.infobox{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.infobox>span{
+    margin-left: 1rem;
+}
+#download{
+    text-decoration: none;
+    background-color: white;
+    color: rgb(3, 2, 2);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px 30%;
+    display: inline-block;
+}
+#download:hover{
+    text-decoration: underline;
+    color: blueviolet;
+    background-color: black;
+}
+.subheadT{
+  position: relative;
+  top:30px;
+  left:-28%;
+  color: rgb(41, 39, 39);
+
+}
+.subheadP{
+    color: rgb(41, 39, 39);
+    position: relative;
+    left: 20%;
+}
+
+.progressbar{
+    width: 90%;
+    display:grid;
+    grid-template-columns: repeat(2,0.5fr);
+    align-items: center;
+    gap:2rem;
+    margin: 20px 100px;
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+}
+.head,.barpercent{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: rgb(197, 152, 205);
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.HBar{
+    background-color: rgb(118, 201, 35);
+    width: 92%;
+ }
+ .CBar{
+     background-color: rgb(118, 201, 35);
+     width: 80%;
+  }
+  .GBar{
+     background-color: rgb(118, 201, 35);
+     width: 88%;
+  }
+  .projectContainer{
+    display: flex;
+    top:100px;
+    justify-content: space-around;
+ 
+
+  }
+  .prohead{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    color: rgb(41, 39, 39);
+}
+  .pro1,.pro2,.pro3{
+   margin-top: 100px,100px,0,100;
+   margin-left: 100px;
+   margin-right: 100px;
+  }
+  .procont{
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: justify;
+    position: relative;
+    margin-bottom: 30px;
+  }
+ .button{
+    margin-left: 50px;
+    padding: 10px 10px;
+    text-decoration: none;
+    color:black;
+    background-color: rgb(88, 10, 88);
+    border-style:groove;
+ }
+  #contact{
+    margin: 10% 8% 0px 8% ;
+ }
+ .iconCollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:5% ;
+ }
+ .icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 10px;
+ }
+ .brands{
+    color: black;
+    font-size: 2rem;
+ }
+ .icon:hover{
+    background-image: linear-gradient(to bottom right,blue,rgb(156, 58, 173),black);
+ }
+ .icon:hover .brands{
+    color:white;
+     /* animation */
+    animation: rotate 3s;
+ }
+ @keyframes rotate{
+    0%{
+        transform:rotate(30deg)
+    }
+    20%{
+        transform:rotate(-30deg)
+    }
+    40%{
+        transform:rotate(30deg)
+    }
+    60%{
+        transform:rotate(-30deg)
+    }
+    80%{
+        transform:rotate(30deg)
+    }
+    100%{
+        transform:rotate(-30deg)
+    }
+ }
+ footer{
+    margin-top: 8%;
+ }
+ #copyright{
+    text-align: center;
+    font-weight: 600;
+ }
+ .upArrow{
+    float: right;
+    margin: -40px 20px 20px 0;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+ ::-webkit-scrollbar{
+    width:10px;
+    border-radius: 10px;
+ }
+ ::-webkit-scrollbar-track{
+    background-color: rgb(75, 46, 87);
+ }
+ ::-webkit-scrollbar-thumb{
+    background-color: rgb(117, 66, 151);
+    border-radius: 10px;
+ } 
+
+
+
